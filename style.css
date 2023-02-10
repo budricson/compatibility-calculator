@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(to bottom, #ffb3b3, #ff69b4, red);
+  font-family: 'Inter', sans-serif;
+  max-width: 1200px; /* new */
+  margin: 0 auto; /* new */
+  height: 155vh;
+}
+
+.title {
+  text-align: left;
+  font-size: 45px !important;
+  color: #f3f8fd;
+  padding-left: 0px;
+}
+
+.reset {
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 500;
+  opacity: 500;
+  
+}
+
+
+h2 {
+font-size: 15px;
+}
+
+div {
+  text-align: center;
+  color: #f3f8fd;
+  
+}
+
+.gif-container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto; /* new */
+}
+
+.gif-container img {
+  width: 75%;  /* adjust this value to make the gif smaller or bigger */
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .gif-container {
+    width: 100%;
+  }
+  
+  .title,
+  .yourName,
+  .partnersName,
+  .heart,
+  .percentage,
+  .results,
+  .verdict {
+    max-width: 90%; /* new */
+    margin: 0 auto; /* new */
+  }
+}
+
+input {
+background-color: rgba(255, 255, 255, 0.5); /* adjust the last value to change transparency */
+border: none;
+padding: 10px;
+font-size: 16px;
+}
+
+.yourName, .partnersName {
+  font-size: 30px;
+  border-radius: 8px;
+  padding: 10px;
+  width: 75%;
+  margin: 20px auto;
+  margin-top: 0px;
+}
+
+.heart {
+  cursor: pointer;
+  height: 25vh;
+  width: 25vh;
+  font-size: 10em;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: #f3f8fd;
+}
+
+.heart.active {
+  animation: pulse 1s ease-out;
+  animation-duration: 0.2s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.20);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.percentage {
+  font-size: 30px;
+  margin-top: 60px;
+  margin-left: 60px;
+  color: #f3f8fd;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    font-size: 30px;
+  }
+  
+  .yourName, .partnersName {
+    font-size: 20px;
+  }
+  
+  .percentage {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
